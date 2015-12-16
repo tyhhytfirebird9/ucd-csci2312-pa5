@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.3)
 project(pa5game)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -std=c++0x")
 
 set(SOURCE_FILES main.cpp
         Game.cpp Game.h
@@ -17,5 +17,6 @@ set(SOURCE_FILES main.cpp
         Exceptions.cpp Exceptions.h
         Strategy.h
         DefaultAgentStrategy.cpp DefaultAgentStrategy.h
-        Gaming.h AggressiveAgentStrategy.cpp AggressiveAgentStrategy.h)
+        Gaming.h  AggressiveAgentStrategy.h)
+
 add_executable(pa5game ${SOURCE_FILES})
