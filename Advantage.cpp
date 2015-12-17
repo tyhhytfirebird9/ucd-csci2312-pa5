@@ -13,9 +13,11 @@ namespace Gaming{
 
     Advantage::~Advantage() {}
 
-    void Advantage::print(std::ostream &os) const { }
+    void Advantage::print(std::ostream &os) const {
+        os << ADVANTAGE_ID;
+    }
 
-    double Advantage::getCapacity() const { }
+    double Advantage::getCapacity() const { return __capacity * ADVANTAGE_MULT_FACTOR; }
     double Advantage::consume() { }
 
 }
